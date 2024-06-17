@@ -1,0 +1,127 @@
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin: 0px;
+   background: linear-gradient(65deg, hsl(251, 100%, 22%), hsla(246, 85%, 38%, 0.822), rgb(75, 58, 228));
+   padding: auto;
+}
+
+#container {
+    
+}
+
+p, h2, h3 {
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(hsl(241, 99%, 26%), hsla(239, 75%, 47%, 0.822),rgb(74, 71, 233));
+    padding: 20px;
+    margin: 0px;
+    height: 500px;
+    width: 97%;
+    height: 50%;
+}
+
+h1 {
+   color: white;
+   text-shadow: 5px 3px rgb(14, 80, 223);
+   font-size: 50px;
+}
+
+.skill-li {
+   list-style: none;
+   display: flex;
+ }
+ 
+
+.mediv {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.me-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.me-pic-co:hover {
+    transform: rotateY(150deg);
+    transition: 4s ease-in-out;
+}
+
+.me-pic::before {
+    
+}
+
+.me-pic-co {
+    width: 100%;
+    height: 50%;
+    box-shadow: 0 0 20px 0 white;
+    border-radius: 50%;
+    margin: 10px;
+    z-index: 1;
+}
+
+ .projects {
+    background-image: url('./pictures/p-bk.jpg');
+    background-size:auto;
+    width: 100%;
+    height: 100vh;
+ }
+
+ .deck {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    list-style: none;
+    grid-gap: 10px;
+    padding: 10px;
+    width: 98%;
+ }
+
+ @media  (max-width: 700px) {
+   .deck {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      grid-gap: 10px;
+      padding: 10px;
+      width: 100%;
+   } 
+   .card {
+      width: 50%;
+      height: 250px;
+      padding: 10px;
+      margin: 0px;
+      overflow: scroll;
+   } 
+   footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 10px; /* adjust the height to your liking */
+      padding: 10px;
+    } 
+ }
+
+ .card {
+    width: 90%;
+    background: linear-gradient(65deg, hsl(251, 100%, 22%), hsla(246, 85%, 38%, 0.822), rgb(75, 58, 228));
+    padding: 10px;
+    margin: 0px;
+ }
+
+ .card:hover {
+    transform: scale(1.1);
+ }
+
+ .logo {
+   mix-blend-mode:darken;
+   width: 100px;
+ }
+
+ .about-me {
+    padding: 10px;
+ }
