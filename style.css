@@ -117,7 +117,7 @@ h1 {
  }
 
  .card {
-    width: 90%;
+   width: 100%;
     background: linear-gradient(65deg, hsl(251, 100%, 22%), hsla(246, 85%, 38%, 0.822), rgb(75, 58, 228));
     padding: 10px;
     margin: 0px;
@@ -132,8 +132,14 @@ h1 {
    width: 100px;
  }
 
+.logo:hover {
+   mix-blend-mode: normal;
+}
+
  .about-me {
-    padding: 10px;
+   padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
  }
 
 .spinwh {
