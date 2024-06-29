@@ -6,15 +6,29 @@ body {
 }
 
 #container {
-    
+    animation: color-change 2s infinite ease-in-out; /* add this line */
+   width: 100%;
 }
+
+@keyframes color-change {
+   0% {
+     background-color: #2ca8e2;
+   }
+   50% {
+     background-color: #246bd4;
+   }
+   100% {
+     background-color: #142e81;
+   }
+ }
 
 p, h2, h3 {
     color: #fff;
 }
 
 header {
-    background: linear-gradient(hsl(241, 99%, 26%), hsla(239, 75%, 47%, 0.822),rgb(74, 71, 233));
+    background-image: url(./pictures/headerbk.jpg);
+    background-size: cover;
     padding: 20px;
     margin: 0px;
     height: 500px;
@@ -50,10 +64,6 @@ h1 {
 .me-pic-co:hover {
     transform: rotateY(150deg);
     transition: 4s ease-in-out;
-}
-
-.me-pic::before {
-    
 }
 
 .me-pic-co {
@@ -125,3 +135,18 @@ h1 {
  .about-me {
     padding: 10px;
  }
+
+.spinwh {
+   width: 100px;
+   height: 100px;
+   animation: spin 1s linear infinite;
+   animation-direction:normal;
+   animation-timing-function: ease-in-out;
+   clip: rect(0px,10px,10px,0px);
+   align-items: center;
+   border-radius: 70%;
+}
+@keyframes spin {
+   from {transform: rotate(0deg);}
+   to {transform: rotate(360deg);}
+   }
