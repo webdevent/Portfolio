@@ -1,0 +1,99 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: linear-gradient(to right, aqua, purple, pink);
+    padding: 10px;
+    margin: 0px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid purple;
+}
+
+.head ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav {
+    width: 50%;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    background-image: url(./pictures/headerbk.jpg);
+    background-size: cover;
+    width: 100%;
+   height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+button {
+    background: linear-gradient(to right, aqua, purple, pink);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    margin: 5px;
+}
+
+button:hover {
+    background: linear-gradient(to right, purple, pink, aqua);
+    box-shadow: 0px 1px 5px 0px aquamarine;
+}
+
+button:active {
+    transform: scale(1.5);
+}
+
+.me-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.title {
+    animation: shift 5s infinite;
+}
+
+@keyframes shift {
+    0% {
+        transform: translateX(0px);
+        }
+    50%{
+        transform: translateX(200px);
+        color: pink;
+        }
+    100% {
+        transform: translateX(0px);
+        }
+}
+
+.section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

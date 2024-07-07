@@ -1,0 +1,70 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: linear-gradient(to right, aqua, purple, pink);
+    padding: 10px;
+    margin: 0px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid purple;
+}
+
+.head ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav {
+    width: 50%;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.projects {
+    background-image: url('./pictures/p-bk.jpg');
+    background-size:auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+ }
+
+ .deck {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0px;
+    list-style: none;
+ }
+
+ .card {
+    width: 90%;
+    background: linear-gradient(65deg, hsl(251, 100%, 22%), hsla(246, 85%, 38%, 0.822), rgb(75, 58, 228));
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    color: #ccc;
+ }
+
+ .card:hover {
+    transform: scale(1.1);
+ }
