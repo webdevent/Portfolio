@@ -9,7 +9,8 @@
     </head>
     <body>
         <header class="head">
-            <h1>Portfolio</h1>
+            <h1 class="title">Portfolio</h1>
+            <button class="drop-menu">menu</button>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -25,16 +26,23 @@
                     <strong>Here are a few things about me:</strong> I have always been an computer lover since i was 15 did come to learn about computer science till i was 16 but a that time i was using all my time to figure out how to do Cyber Security i started compter sciencewhen i became 17 and since than i have been expanding my knowlege and skills in that field.
                 </p>
             </div>
-            <div class="section">
+            <div class="section2">
                     <h3 style="box-shadow: 5px 5px aqua; color: white; display: block; width: 150px; margin: 0px;">My Skills</h3>
                     <ul class="skill-li" >
-                        <li><img src="./pictures/logos.png" class="logo" style="width: 180px;"></i></li>
+                        <li><img src="./pictures/logos.png" class="logo" ></i></li>
                         <li><img src="./pictures/javalg.png" class="logo"></li>
                         <li><img src="./pictures/resplg.png" class="logo"></li>
-                        <li><img src="./pictures/git.png" class="logo" style="width: 200px;"></li>
+                        <li><img src="./pictures/git.png" class="logo"></li>
 
                     </ul>
             </div>
         </div>
+        <script>
+            const dropMenu = document.querySelector('.drop-menu');
+            const nav = document.querySelector('nav');
+            dropMenu.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                });
+        </script>
     </body>
 </html>
