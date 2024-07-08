@@ -68,3 +68,75 @@ a {
  .card:hover {
     transform: scale(1.1);
  }
+
+button {
+    background: linear-gradient(to right, aqua, purple, pink);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    margin: 5px;
+}
+
+button:hover {
+    background: linear-gradient(to right, purple, pink, aqua);
+    box-shadow: 0px 1px 5px 0px aquamarine;
+}
+.drop-menu {
+    display: none;
+}
+@media (max-width: 700px) {
+    .deck {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .title {
+        font-size: 2rem;
+        animation: chcolo 5s infinite;
+    }
+    @keyframes chcolo {
+        0% {
+            color: white;
+        }
+        50% {
+            color: pink;
+            transform: scale(0.9);
+        }
+        100% {
+            color: white;
+        }
+    }
+    nav {
+        display: none;
+      }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 50%;
+    }
+    .drop-menu {
+        display: block;
+        height: 50%;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+    nav ul a {
+        color: #333;
+        text-decoration: none;
+      }
+      nav ul a:hover {
+        background-color: #f2f2f2;
+      }
+      .active {
+        display: block;
+    }
+}
