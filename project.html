@@ -10,6 +10,7 @@
     <body>
         <header class="head">
             <h1>Portfolio</h1>
+            <button class="drop-menu">menu</button>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -44,5 +45,12 @@
                 </li>
             </ul>
         </div>
+        <script>
+            const dropMenu = document.querySelector('.drop-menu');
+            const nav = document.querySelector('nav');
+            dropMenu.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                });
+        </script>
     </body>
 </html>
