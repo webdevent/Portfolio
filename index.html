@@ -9,6 +9,7 @@
     <body>
         <header class="head">
             <h1 class="title">Portfolio</h1>
+            <button class="drop-menu">menu</button>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -24,9 +25,16 @@
                 <button><a href="about.html">About me</a></button>
                 <button><a href="contact.html">Contact me</a></button>
             </div>
-            <div class="section">
+            <div class="section2">
                 <img src="./pictures/profile pic.png" class="me-pic">
             </div>
         </div>
+        <script>
+            const dropMenu = document.querySelector('.drop-menu');
+            const nav = document.querySelector('nav');
+            dropMenu.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                });
+        </script>
     </body>
 </html>
