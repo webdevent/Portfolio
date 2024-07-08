@@ -68,11 +68,79 @@ p {
     width: 100px;
 }
 
-.section {
+.section, .section2 {
     width: 100%;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+}
+.drop-menu {
+    display: none;
+}
+@media (max-width: 700px) {
+    p {
+        font-size: 20px;
+    }
+    .logo {
+        width: 100px;
+    }
+    .section2 {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .container {
+        height: 100%;
+    }
+    .title {
+        font-size: 2rem;
+        animation: chcolo 5s infinite;
+    }
+    @keyframes chcolo {
+        0% {
+            color: white;
+        }
+        50% {
+            color: pink;
+            transform: scale(0.9);
+        }
+        100% {
+            color: white;
+        }
+    }
+    nav {
+        display: none;
+      }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 50%;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+    nav ul a {
+        color: #333;
+        text-decoration: none;
+      }
+      nav ul a:hover {
+        background-color: #f2f2f2;
+      }
+      .drop-menu {
+        display: block;
+        height: 50%;
+      }
+      .active {
+        display: block;
+    }
+}
 }
