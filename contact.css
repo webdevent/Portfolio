@@ -110,3 +110,70 @@ button {
     background: #aaa;
     
 }
+
+.drop-menu {
+    background: linear-gradient(to right, aqua, purple, pink);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    margin: 5px;
+    display: none;
+}
+
+.drop-menu:hover {
+    background: linear-gradient(to right, purple, pink, aqua);
+    box-shadow: 0px 1px 5px 0px aquamarine;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .incontainer {
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        backdrop-filter: none;
+        margin-top: 30px;
+        width: 58%;
+    }
+    .active {
+        display: block;
+    }
+    nav {
+        display: none;
+      }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 50%;
+    }
+    .drop-menu {
+        display: block;
+        height: 50%;
+    }
+    nav ul li {
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+    nav ul a {
+        color: #333;
+        text-decoration: none;
+      }
+      nav ul a:hover {
+        background-color: #f2f2f2;
+      }
+      .active {
+        display: block;
+    }
+}
