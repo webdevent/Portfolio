@@ -76,6 +76,21 @@ p {
     align-items: center;
     color: white;
 }
+button {
+    background: linear-gradient(to right, aqua, purple, pink);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    margin: 5px;
+}
+
+button:hover {
+    background: linear-gradient(to right, purple, pink, aqua);
+    box-shadow: 0px 1px 5px 0px aquamarine;
+}
 .drop-menu {
     display: none;
 }
