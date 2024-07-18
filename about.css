@@ -141,18 +141,27 @@ button:active {
     body {
         overflow: hidden;
     }
+    .skill-li li img {
+        width: 70px;
+        height: 70px;
+    }
     p {
         font-size: 20px;
     }
     .logo {
         width: 100px;
     }
+    .section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
     .section2 {
         height: 50vh;
         display: flex;
         flex-direction: column;
         margin-top: 70px;
-        padding: 10px;
+        padding-top: 20px;
         width: 80%;
     }
     .container {
