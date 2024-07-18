@@ -1,20 +1,32 @@
 body {
     padding: 0px;
     margin: 0px;
+    overflow: hidden;
 }
 
 .head {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background: linear-gradient(to right, aqua, purple, pink);
+    background: url(./pictures/headerbk.jpg);
     padding: 10px;
     margin: 0px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 1px solid purple;
+    border-bottom: 3px solid rgb(180, 153, 0);
+    align-items: center;
+}
+
+.head h1 {
+    text-shadow: 0px 0px 5px blue;
+}
+
+.head a:hover {
+    color: rgb(214, 182, 0);
+    text-decoration: underline;
+    
 }
 
 .head ul {
@@ -40,13 +52,23 @@ a {
 
 
 .container {
-    background-image: url(./pictures/headerbk.jpg);
-background-size: cover;
+    background-image: url(./pictures/abobk.jpg);
+    background-size: cover;
 width: 100%;
 height: 100%;
 display: grid;
     grid-template-columns: 50% 47%;
     gap: 10px;
+}
+
+.my-skill-head {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    text-shadow: 0px 0px 5px aqua;
 }
 
 p {
@@ -61,6 +83,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
+    width: 90%;
   }
   
 
@@ -68,7 +91,29 @@ p {
     width: 100px;
 }
 
-.section, .section2 {
+button {
+    background: linear-gradient(to right,rgb(241, 205, 0), rgb(180, 153, 0));
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid gold;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: goldenrod;
+    box-shadow: 0px 1px 5px 0px white;
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: scale(1.5);
+}
+
+
+.section {
     width: 100%;
     height: 80vh;
     display: flex;
@@ -76,25 +121,26 @@ p {
     align-items: center;
     color: white;
 }
-button {
-    background: linear-gradient(to right, aqua, purple, pink);
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px;
-    border: none;
-    margin: 5px;
+
+.section p {
+    text-shadow: 0px 0px 5px purple;
 }
 
-button:hover {
-    background: linear-gradient(to right, purple, pink, aqua);
-    box-shadow: 0px 1px 5px 0px aquamarine;
+.section2 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .drop-menu {
     display: none;
 }
 @media (max-width: 700px) {
+    body {
+        overflow: hidden;
+    }
     p {
         font-size: 20px;
     }
@@ -106,9 +152,12 @@ button:hover {
         display: flex;
         flex-direction: column;
         margin-top: 70px;
+        padding: 10px;
+        width: 80%;
     }
     .container {
-        height: 100%;
+        height: 100svh;
+        gap: 0px;
     }
     .title {
         font-size: 2rem;
@@ -119,7 +168,7 @@ button:hover {
             color: white;
         }
         50% {
-            color: pink;
+            color: goldenrod;
             transform: scale(0.9);
         }
         100% {
@@ -158,4 +207,17 @@ button:hover {
         display: block;
     }
 }
+::-webkit-scrollbar {
+    width: 10px;
+    background: linear-gradient(rgb(241, 205, 0), rgb(180, 153, 0));
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+    
 }
