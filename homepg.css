@@ -1,20 +1,31 @@
 body {
     padding: 0px;
     margin: 0px;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 3rem;
+    background: linear-gradient(to right,rgb(241, 205, 0), rgb(180, 153, 0) 80%);
+    text-shadow: 0px 0px 3px yellow;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .head {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background: linear-gradient(to right, aqua, purple, pink);
+    background: linear-gradient(to right,rgb(241, 205, 0), rgb(180, 153, 0));
+    background-size: cover;
     padding: 10px;
     margin: 0px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 1px solid purple;
+    border: none;
+    align-items: center;
 }
 
 .head ul {
@@ -37,9 +48,15 @@ a {
     text-decoration: none;
 }
 
+.head a:hover {
+    color: black;
+    text-decoration: underline;
+    
+}
+
 .container {
     background-image: url(./pictures/headerbk.jpg);
-    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
    height: 100%;
     display: grid;
@@ -47,29 +64,57 @@ a {
 }
 
 button {
-    background: linear-gradient(to right, aqua, purple, pink);
+    background: linear-gradient(to right,rgb(241, 205, 0), rgb(180, 153, 0));
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
     padding: 5px;
-    border: none;
+    border: 2px solid gold;
     margin: 5px;
 }
 
 button:hover {
-    background: linear-gradient(to right, purple, pink, aqua);
-    box-shadow: 0px 1px 5px 0px aquamarine;
+    background-color: goldenrod;
+    box-shadow: 0px 1px 5px 0px white;
+    transform: scale(1.2);
 }
 
 button:active {
     transform: scale(1.5);
 }
 
+.image-cover {
+    height: 70%;
+    width: 80%;
+}
+
 .me-pic {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    border-radius: 50%;
+    object-fit: cover;
+    animation: bounce 5s infinite 1s ;
+}
+
+.me-pic:hover {
+    
+}
+
+@keyframes bounce {
+    25% {
+        transform: translateY(10px);
+        }
+    50% {
+        transform: translateY(0px);
+        transform: skewY(20deg);
+        }
+    75% {
+        transform: translateY(-20px);
+        }
+    100% {
+        transform: translateY(0px);
+        transform: skewX(10deg);
+    }
 }
 
 .title {
@@ -82,7 +127,8 @@ button:active {
         }
     50%{
         transform: translateX(200px);
-        color: pink;
+        color: black;
+        text-shadow: 0px 0px 5px white;
         }
     100% {
         transform: translateX(0px);
@@ -103,20 +149,27 @@ button:active {
 }
 
 @media (max-width: 700px) {
+    body {
+        overflow: scroll;
+    }
     .section {
         flex-direction: column;
         justify-content: center;
+        height: 300px;
     }
+    
     .section2 {
-        display: none;
+        height: 260px;
     }
-    .me-pic {
-        display: none;
+    h2 {
+        font-size: 30px;
     }
     .container {
         display: flex;
+        flex-direction: column-reverse;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        gap: 0px;
     }
     .drop-menu {
         display: block;
@@ -131,7 +184,7 @@ button:active {
             color: white;
         }
         50% {
-            color: pink;
+            color: black;
             transform: scale(0.9);
         }
         100% {
@@ -167,5 +220,17 @@ button:active {
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background: linear-gradient(rgb(241, 205, 0), rgb(180, 153, 0));
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
     
 }
