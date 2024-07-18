@@ -7,14 +7,25 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background: linear-gradient(to right, aqua, purple, pink);
+    background: url(./pictures/headerbk.jpg);
     padding: 10px;
     margin: 0px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 1px solid purple;
+    border-bottom: 3px solid goldenrod;
+    align-items: center;
+}
+
+.head h1 {
+    text-shadow: 0px 0px 5px blue;
+}
+
+.head a:hover {
+    color: rgb(214, 182, 0);
+    text-decoration: underline;
+    
 }
 
 .head ul {
@@ -38,7 +49,7 @@ a {
 }
 
 .projects {
-    background-image: url('./pictures/p-bk.jpg');
+    background-image: url('./pictures/goldastrobk.jpg');
     background-size:auto;
     width: 100%;
     height: 100%;
@@ -57,33 +68,41 @@ a {
 
  .card {
     width: 90%;
-    background: linear-gradient(65deg, hsl(251, 100%, 22%), hsla(246, 85%, 38%, 0.822), rgb(75, 58, 228));
+    background: linear-gradient(to right,rgba(241, 205, 0, 0.836), rgba(180, 153, 0, 0.712));
     padding: 10px;
     margin: 0px;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    color: #ccc;
+    color: black;
+    
  }
 
  .card:hover {
     transform: scale(1.1);
  }
 
-button {
-    background: linear-gradient(to right, aqua, purple, pink);
+ 
+ button {
+    background: linear-gradient(to right,rgb(241, 205, 0), rgb(180, 153, 0));
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
     padding: 5px;
-    border: none;
+    border: 2px solid gold;
     margin: 5px;
 }
 
 button:hover {
-    background: linear-gradient(to right, purple, pink, aqua);
-    box-shadow: 0px 1px 5px 0px aquamarine;
+    background-color: goldenrod;
+    box-shadow: 0px 1px 5px 0px white;
+    transform: scale(1.2);
 }
+
+button:active {
+    transform: scale(1.5);
+}
+
 .drop-menu {
     display: none;
 }
@@ -101,7 +120,7 @@ button:hover {
             color: white;
         }
         50% {
-            color: pink;
+            color: goldenrod;
             transform: scale(0.9);
         }
         100% {
@@ -139,4 +158,19 @@ button:hover {
       .active {
         display: block;
     }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: linear-gradient(rgb(241, 205, 0), rgb(180, 153, 0));
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+    
 }
