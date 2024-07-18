@@ -7,14 +7,14 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background: linear-gradient(to right, aqua, purple, pink);
+    background: linear-gradient(to right,rgb(241, 205, 0), rgb(180, 153, 0));
     padding: 10px;
     margin: 0px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 1px solid purple;
+    align-items: center;
 }
 
 .head ul {
@@ -36,13 +36,16 @@ a {
     text-decoration: none;
 }
 
+.head a:hover {
+    color: black;
+    text-decoration: underline;
+    
+}
+
 .container {
     display: flex;
     justify-content:center;
     background-image: url(./pictures/headerbk.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 100%;
 }
 
@@ -85,20 +88,29 @@ textarea {
 }
 
 button {
-    background-color: rgb(31, 141, 204);
-    width: 100px;
+    background: linear-gradient(to right,rgb(241, 205, 0), rgb(180, 153, 0));
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    border: none;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid gold;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: goldenrod;
+    box-shadow: 0px 1px 5px 0px white;
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: scale(1.5);
 }
 
 ::-webkit-scrollbar {
     width: 10px;
-    background: linear-gradient( aqua, purple, pink);
+    background: linear-gradient(rgb(241, 205, 0), rgb(180, 153, 0));
 }
 
 ::-webkit-scrollbar-thumb {
@@ -112,7 +124,6 @@ button {
 }
 
 .drop-menu {
-    background: linear-gradient(to right, aqua, purple, pink);
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -124,7 +135,6 @@ button {
 }
 
 .drop-menu:hover {
-    background: linear-gradient(to right, purple, pink, aqua);
     box-shadow: 0px 1px 5px 0px aquamarine;
 }
 
