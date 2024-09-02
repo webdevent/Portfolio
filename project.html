@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Projects</title>
         <link rel="stylesheet" href="project.css">
-    </head>
-    <body>
+</head>
+<body>
         <header class="head">
-            <h1>Portfolio</h1>
+            <h1 class="title">Portfolio</h1>
             <button class="drop-menu">menu</button>
             <nav>
-                <ul>
+                <ul class="pages">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="project.html">Project</a></li>
@@ -22,41 +22,11 @@
         </header>
         <div class="projects">
             <h2 style="text-align: center; margin: 0px; padding: 5px; color: whitesmoke;">My Projects</h2>
-            <ul class="deck">
-                    <li id="project1" class="card">
-                        <a href="https://webdevent.github.io/Nelloesion-store/" target="_blank"><img src="./pictures/nell-web.jpg" style="width: 100%;"></a>
-                        <p> This was an Websites project for a friend clothing brand to help him get more sales this was also the frist big website i did on my own from this i widen my knowlege base and learn new ways of doing html.</p>
-                    </li>
-                    <li id="project2" class="card">
-                        <a href="https://webdevent.github.io/RPG/" target="_blank"><img src="./pictures/Dragon-fight.jpg" style="width: 100%;"></a>
-                    <p>This website was an project from <a href="https://www.freecodecamp.org/learn/">Free Coding Camp</a> which i add more to it, to make it more fun to play and more challenging to, to make it more fun alot of time and effort went into doing this project but you can view the out come your self by clicking the image.</p>
-                </li>
-                <li id="project3" class="card">
-                    <a href="https://webdevent.github.io/CalcuWage/"><img src="./pictures/wage.jpg" style="width: 100%;"></a>
-                    <p>A Calculator App that can Calculate your pay sumtracting taxs all you have to do is enter your pay per houry, your hours worked and the country and the Calculator will do the rest</p>
-                </li>
-                <li id="project4" class="card">
-                    <a href="https://webdevent.github.io/Timo/" target="_blank"> <img src="./pictures/timo.jpg" style="width: 100%;"></a>
-                    <p><strong>Still in progress coming soon </strong>Timo is an time app that includes an todo list and an stopwatch, a timer as well corrently not working timo is still an working progress</p>
-                </li>
-                <li id="project5" class="card">
-                    <a href="https://webdevent.github.io/Application/index.html"><img src="./pictures/demoapp.PNG" style="width: 100%;"></a>
-                    <p>This is an Job Application website for a fake company called wellwash</p>
-                </li>
-                <li id="project6" class="card">
-                    <a href="https://webdevent.github.io/Weather-App/"><img src="./pictures/weather app image.PNG" style="width: 100%;"></a>
-                    <p><strong>Weather App this app will use the city you enter and tell you the weather condition of the area</strong></p>
-                </li>
-                <li id="project7" class="card">
-                    <a href="https://webdevnetclone.netlify.app/" target="_blank"><img src="./pictures/netflix-clone.PNG" style="width: 100%;"></a>
-                    <p><strong>Netflix Clone made from React</strong> This is an websites made to look and opperate like netflix with some of it features thee equalizer and beverly hills cops are currentlt missing video due to space issue but every thing else works like just like netflix</p>
-                </li>
-                <li id="project8" class="card">
-                    <a href="" target="_blank"><img src="./pictures/coming-soon.jpg" style="width: 100%;"></a>
-                    <p><strong>E-commerce food store</strong></p>
-                </li>
+            <ul class="deck" id="deck">
+                   
             </ul>
         </div>
+        <script src="projects.js"></script>
         <script>
             const dropMenu = document.querySelector('.drop-menu');
             const nav = document.querySelector('nav');
@@ -64,5 +34,5 @@
                 nav.classList.toggle('active');
                 });
         </script>
-    </body>
+</body>
 </html>

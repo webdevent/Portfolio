@@ -1,232 +1,128 @@
 body {
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
+    background-image: linear-gradient(rgba(24, 24, 24, 0.705), rgba(24, 24, 24, 0.705)), url(./pictures/bk.jpg);
+    background-size: 100% ;
 }
 
-.head {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background: url(./pictures/headerbk.jpg);
-    padding: 10px;
-    margin: 0px;
+.title {
+    font-size: 40px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: bold;
-    border-bottom: 3px solid rgb(180, 153, 0);
-    align-items: center;
-}
-
-.head h1 {
-    text-shadow: 0px 0px 5px blue;
-}
-
-.head a:hover {
-    color: rgb(214, 182, 0);
-    text-decoration: underline;
+    text-shadow: 150px 0px 0px aqua,
+    0px 30px 0px blue;
     
 }
-
-.head ul {
+.head {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    padding: 10px;
+    border-bottom: 3px double rgb(1, 107, 228);
+    height: 100px;
+}
+
+.pages {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
 }
 
-nav {
+.pages a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.pages a:hover {
+    color: rgb(41, 116, 255);
+}
+
+.pages a:hover::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    animation: sliding infinite 1s;
+}
+
+@keyframes sliding {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+        width: 0px;
+    }
+    60% {
+        width: 40px;
+    }
+    75% {
+        transform: translateX(45px);
+        width: 0px;
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+
+.drop-menu {
+    display: none;
+}
+
+.container {
+    display: flex;
+}
+
+.section {
+    padding: 10px;
+    width: 50%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transition: all 1s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2) rotateX(360deg);
+}
+
+.section2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
     width: 50%;
 }
 
-li {
-    margin: 0 10px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-
-
-.container {
-    background-image: url(./pictures/abobk.jpg);
-    background-size: cover;
-width: 100%;
-height: 100%;
-display: grid;
-    grid-template-columns: 50% 47%;
-    gap: 10px;
-}
-
 .my-skill-head {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 25px;
     color: white;
-    margin: 10px;
-    text-shadow: 0px 0px 5px aqua;
-}
-
-p {
-    text-overflow: clip;
-    padding: 10px;
-    font-size: 30px;
-    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .skill-li {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px;
-    width: 90%;
-  }
-  
+    width: 80%;
+}
 
 .logo {
     width: 100px;
-}
-
-button {
-    background: linear-gradient(to right,rgb(241, 205, 0), rgb(180, 153, 0));
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px;
-    border: 2px solid gold;
-    margin: 5px;
-}
-
-button:hover {
-    background-color: goldenrod;
-    box-shadow: 0px 1px 5px 0px white;
-    transform: scale(1.2);
-}
-
-button:active {
-    transform: scale(1.5);
-}
-
-
-.section {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.section p {
-    text-shadow: 0px 0px 5px purple;
-}
-
-.section2 {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.drop-menu {
-    display: none;
-}
-@media (max-width: 700px) {
-    body {
-        overflow: hidden;
-    }
-    .skill-li li img {
-        width: 70px;
-        height: 70px;
-    }
-    p {
-        font-size: 20px;
-    }
-    .logo {
-        width: 100px;
-    }
-    .section {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-    .section2 {
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        margin-top: 70px;
-        padding-top: 20px;
-        width: 80%;
-    }
-    .container {
-        height: 100svh;
-        gap: 0px;
-    }
-    .title {
-        font-size: 2rem;
-        animation: chcolo 5s infinite;
-    }
-    @keyframes chcolo {
-        0% {
-            color: white;
-        }
-        50% {
-            color: goldenrod;
-            transform: scale(0.9);
-        }
-        100% {
-            color: white;
-        }
-    }
-    nav {
-        display: none;
-      }
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-        padding: 10px;
-        width: 50%;
-    }
-    
-    nav ul li {
-        margin: 0;
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-    nav ul a {
-        color: #333;
-        text-decoration: none;
-      }
-      nav ul a:hover {
-        background-color: #f2f2f2;
-      }
-      .drop-menu {
-        display: block;
-        height: 50%;
-      }
-      .active {
-        display: block;
-    }
-}
-::-webkit-scrollbar {
-    width: 10px;
-    background: linear-gradient(rgb(241, 205, 0), rgb(180, 153, 0));
-}
-
-::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #aaa;
-    
+    height: 100px;
 }
