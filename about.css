@@ -2,7 +2,7 @@ body {
     padding: 0px;
     margin: 0px;
     background-image: linear-gradient(rgba(24, 24, 24, 0.705), rgba(24, 24, 24, 0.705)), url(./pictures/bk.jpg);
-    background-size: 100% ;
+    background-size: 100% 100vh;
 }
 
 .title {
@@ -86,7 +86,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-button {
+.resume-btn {
     background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
     padding: 5px;
     font-size: 15px;
@@ -98,7 +98,7 @@ button {
     transition: all 1s ease-in-out;
 }
 
-button:hover {
+.resume-btn:hover {
     transform: scale(1.2) rotateX(360deg);
 }
 
@@ -125,4 +125,62 @@ button:hover {
 .logo {
     width: 100px;
     height: 100px;
+}
+
+@media (max-width: 700px) {
+    .title {
+        font-size: 15px;
+        text-shadow: none;
+    }
+    .head {
+        position: relative;
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    .pages {
+        display: none;
+        width: 50px;
+    }
+    .active {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+    }    
+    .drop-menu {
+        display: block;
+        color: white;
+        height: 1px;
+        font-size: 10px;
+        float: right;
+        background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+    .drop-menu:active {
+        transform: scale(1.5);
+    }
+    .drop-menu::after {
+        content: '';
+        transform: translateY(-50px);
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+        background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
+    }
+
+    .drop-menu::before {
+        content: '';
+        transform: translateY(-20px);
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+        background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
+    }
 }

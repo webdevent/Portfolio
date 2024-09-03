@@ -85,20 +85,16 @@ body {
  }
 
  .deck {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto auto auto;
-    grid-gap: 10px;
-    width: 95%;
-    padding: 10px;
-    margin: 0px;
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
  }
 
  .card {
     width: 300px;
     height: 200px;
-    background: linear-gradient(to right,rgba(241, 205, 0, 0.836), rgba(180, 153, 0, 0.712));
+    background: linear-gradient(rgba(0, 0, 255, 0.664), rgba(0, 255, 255, 0.63));
     padding: 0px;
     margin: 0px;
     border-radius: 10px;
@@ -132,26 +128,15 @@ body {
     border-radius: 10px;
  }
 
- 
- button {
-    background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px;
-    border: none;
-    margin: 5px;
-}
 
-button:hover {
+/*button:hover {
     box-shadow: 0px 1px 5px 0px white;
     transform: scale(1.2);
-}
+}*/
 
-button:active {
+/*button:active {
     transform: scale(1.5);
-}
+}*/
 
 .drop-menu {
     display: none;
@@ -162,65 +147,65 @@ button:active {
         grid-template-columns: auto auto;
     }
     .title { 
-        font-size: 2rem;
-        animation: chcolo 5s infinite;
+        font-size: 15px;
+        text-shadow: none;
     }
-    @keyframes chcolo {
-        0% {
-            color: white;
-        }
-        50% {
-            color: goldenrod;
-            transform: scale(0.9);
-        }
-        100% {
-            color: white;
-        }
+    
+    .head {
+        position: relative;
+        height: 50px;
+        justify-content: space-between;
     }
-    nav {
+    .pages {
         display: none;
-      }
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-        padding: 10px;
-        width: 50%;
+        width: 50px;
     }
+    .active {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+    }    
     .drop-menu {
         display: block;
-        height: 50%;
-    }
-
-    nav ul li {
-        margin: 0;
+        color: white;
+        height: 1px;
+        font-size: 10px;
+        float: right;
+        background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
         padding: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-    nav ul a {
-        color: #333;
-        text-decoration: none;
-      }
-      nav ul a:hover {
-        background-color: #f2f2f2;
-      }
-      .active {
-        display: block;
+        border: none;
+        border-radius: 10px;
     }
-}
+    .drop-menu::after {
+        content: '';
+        transform: translateY(-50px);
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+        background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
+    }
 
-::-webkit-scrollbar {
-    width: 10px;
-    background: linear-gradient(rgb(241, 205, 0), rgb(180, 153, 0));
-}
+    .drop-menu::before {
+        content: '';
+        transform: translateY(-20px);
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+        background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
+    }
 
-::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 5px;
-}
+    .deck {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #aaa;
-    
+    .card {
+        width: 350px;
+    }
 }

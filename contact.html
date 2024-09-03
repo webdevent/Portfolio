@@ -9,9 +9,9 @@
     <body>
         <header class="head">
             <h1>Portfolio</h1>
-            <button class="drop-menu">menu</button>
+            <button class="drop-menu" onclick="dropMenu()">menu</button>
             <nav>
-                <ul>
+                <ul class="pages" id="pages">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="project.html">Project</a></li>
@@ -34,12 +34,6 @@
                 </form>
             </div>
         </div>
-        <script>
-            const dropMenu = document.querySelector('.drop-menu');
-            const nav = document.querySelector('nav');
-            dropMenu.addEventListener('click', () => {
-                nav.classList.toggle('active');
-                });
-        </script>
+        <script src="dropmenu.js"></script>
     </body>
 </html>
