@@ -183,4 +183,8 @@ body {
         border-radius: 10px;
         background: linear-gradient(to right, rgba(14, 14, 255, 0.877), rgba(0, 214, 214, 0.849));
     }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 }
