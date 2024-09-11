@@ -43,7 +43,7 @@ const projects = [
     },
     {
         name: "Netflix Clone",
-        link: "https://webdevent.github.io/Timo/",
+        link: "https://webdevnetclone.netlify.app/",
         image: "./pictures/netflix-clone.PNG",
         message: "The website displayed before you is a Netflix clone based on the original Netflix website this website allows you to watch trailers and search through movies on Netflix."
     },
