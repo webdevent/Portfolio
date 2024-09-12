@@ -38,8 +38,8 @@ const projects = [
     {
         name: "Spotify",
         link: "https://webdevent.github.io/Timo/",
-        image: "./pictures/coming-soon.jpg",
-        message: "Spotify clone comming soon"
+        image: "./pictures/spotify-img.png",
+        message: "The website displayed before you is a Spotify clone based on the original Spotify website this website allows you to stream music of 12 artists."
     },
     {
         name: "Netflix Clone",
