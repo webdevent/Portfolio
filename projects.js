@@ -15,19 +15,19 @@ const projects = [
         name: "CaluWage",
         link: "https://webdevent.github.io/CalcuWage/",
         image: "./pictures/wage.jpg",
-        message: "A Calculator App that can Calculate your pay sumtracting taxs all you have to do is enter your pay per houry, your hours worked and the country and the Calculator will do the rest."
+        message: "A Calculator App that can Calculate your pay by subtracting taxes all you have to do is enter your pay per hour, your hours worked and the country and the Calculator will do the rest."
     },
     {
         name: "TIMO",
         link: "https://webdevent.github.io/Timo/",
         image: "./pictures/timo.jpg",
-        message: "Timo is an time app that includes an todo list and an stopwatch, a timer as well corrently not working timo is still an working progress. "
+        message: "Timo is a time app that includes a todo list and a stopwatch, a timer as well currently not working timo is still a working progress. "
     },
     {
         name: "WellWash",
         link: "https://webdevent.github.io/Application/index.html",
         image: "./pictures/demoapp.PNG",
-        message: "This is an Job Application website for a fake company called wellwash"
+        message: "This is a Job Application website for a fake company called Wellwash"
     },
     {
         name: "Weather App",
@@ -37,7 +37,7 @@ const projects = [
     },
     {
         name: "Spotify",
-        link: "https://webdevent.github.io/Timo/",
+        link: "https://github.com/webdevent/spotify-clonejs",
         image: "./pictures/spotify-img.png",
         message: "The website displayed before you is a Spotify clone based on the original Spotify website this website allows you to stream music of 12 artists."
     },
