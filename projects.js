@@ -37,7 +37,7 @@ const projects = [
     },
     {
         name: "Spotify",
-        link: "https://github.com/webdevent/spotify-clonejs",
+        link: "https://webdevenspotify.netlify.app/",
         image: "./pictures/spotify-img.png",
         message: "The website displayed before you is a Spotify clone based on the original Spotify website this website allows you to stream music of 12 artists."
     },
