@@ -36,6 +36,12 @@ const projects = [
         message: "Weather App this app will use the city you enter and tell you the weather condition of the area"
     },
     {
+        name: "APIYA",
+        link: "https://webdeventapiya.netlify.app/",
+        image: "./pictures/apiya-img.png",
+        message: "The website displays three different API pokemon API, weather API, and two different movie APIs using react js."
+    },
+    {
         name: "Spotify",
         link: "https://webdevenspotify.netlify.app/",
         image: "./pictures/spotify-img.png",
